@@ -5,20 +5,20 @@
 // The class here is then constructed to instantiate the design.
 // See the Verilator manual for examples.
 
-#ifndef VERILATED_VLFSR4_H_
-#define VERILATED_VLFSR4_H_  // guard
+#ifndef VERILATED_VLFSR7_H_
+#define VERILATED_VLFSR7_H_  // guard
 
 #include "verilated.h"
 
-class Vlfsr4__Syms;
-class Vlfsr4___024root;
+class Vlfsr7__Syms;
+class Vlfsr7___024root;
 class VerilatedVcdC;
 
 // This class is the main interface to the Verilated model
-class Vlfsr4 VL_NOT_FINAL : public VerilatedModel {
+class Vlfsr7 VL_NOT_FINAL : public VerilatedModel {
   private:
     // Symbol table holding complete model state (owned by this class)
-    Vlfsr4__Syms* const vlSymsp;
+    Vlfsr7__Syms* const vlSymsp;
 
   public:
 
@@ -28,7 +28,7 @@ class Vlfsr4 VL_NOT_FINAL : public VerilatedModel {
     VL_IN8(&clk,0,0);
     VL_IN8(&rst,0,0);
     VL_IN8(&en,0,0);
-    VL_OUT8(&data_out,4,1);
+    VL_OUT8(&data_out,7,1);
 
     // CELLS
     // Public to allow access to /* verilator public */ items.
@@ -36,19 +36,19 @@ class Vlfsr4 VL_NOT_FINAL : public VerilatedModel {
 
     // Root instance pointer to allow access to model internals,
     // including inlined /* verilator public_flat_* */ items.
-    Vlfsr4___024root* const rootp;
+    Vlfsr7___024root* const rootp;
 
     // CONSTRUCTORS
     /// Construct the model; called by application code
     /// If contextp is null, then the model will use the default global context
     /// If name is "", then makes a wrapper with a
     /// single model invisible with respect to DPI scope names.
-    explicit Vlfsr4(VerilatedContext* contextp, const char* name = "TOP");
-    explicit Vlfsr4(const char* name = "TOP");
+    explicit Vlfsr7(VerilatedContext* contextp, const char* name = "TOP");
+    explicit Vlfsr7(const char* name = "TOP");
     /// Destroy the model; called (often implicitly) by application code
-    virtual ~Vlfsr4();
+    virtual ~Vlfsr7();
   private:
-    VL_UNCOPYABLE(Vlfsr4);  ///< Copying not allowed
+    VL_UNCOPYABLE(Vlfsr7);  ///< Copying not allowed
 
   public:
     // API METHODS

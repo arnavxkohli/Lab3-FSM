@@ -1,4 +1,4 @@
-lfsr4_tb.o: ../lfsr4_tb.cpp Vlfsr4.h \
+lfsr_tb.o: ../lfsr_tb.cpp Vlfsr7.h \
  /usr/local/share/verilator/include/verilated.h \
  /usr/local/share/verilator/include/verilatedos.h \
  /usr/local/share/verilator/include/verilated_config.h \

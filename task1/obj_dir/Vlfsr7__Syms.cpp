@@ -1,16 +1,16 @@
 // Verilated -*- C++ -*-
 // DESCRIPTION: Verilator output: Symbol table implementation internals
 
-#include "Vlfsr4__Syms.h"
-#include "Vlfsr4.h"
-#include "Vlfsr4___024root.h"
+#include "Vlfsr7__Syms.h"
+#include "Vlfsr7.h"
+#include "Vlfsr7___024root.h"
 
 // FUNCTIONS
-Vlfsr4__Syms::~Vlfsr4__Syms()
+Vlfsr7__Syms::~Vlfsr7__Syms()
 {
 }
 
-Vlfsr4__Syms::Vlfsr4__Syms(VerilatedContext* contextp, const char* namep, Vlfsr4* modelp)
+Vlfsr7__Syms::Vlfsr7__Syms(VerilatedContext* contextp, const char* namep, Vlfsr7* modelp)
     : VerilatedSyms{contextp}
     // Setup internal state of the Syms class
     , __Vm_modelp{modelp}
