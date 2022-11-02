@@ -23,8 +23,11 @@ int main(int argc,char **argv, char **env){
     vbdHeader("L3T1: lfsr4");
 
     // initialize simulation inputs
-    top->clk = 1 ;
-    top->rst = 1 ;
+    top->clk = 1;
+    top->en = vbdFlag();
+    top->rst = 1;
+
+    vbdSetMode(1);
 
     //run simulation for many clock cycles
     for (i=0; i<300; i++){ // clock cycles
@@ -35,19 +38,16 @@ int main(int argc,char **argv, char **env){
                 top->eval();
             }
 
-            vbdPlot((int(top->dout1)), 0, 255);
-            vbdPlot((int(top->dout2)), 0, 255);
-            vbdCycle(i);
-
             // ++++ Send count value to Vbuddy
             // vbdHex(4, (int(top->count) >> 16) & 0XF);
             // vbdHex(3, (int(top->bcd) >> 8) & 0XF);
             // vbdHex(2, (int(top->bcd) >> 4) & 0XF);
-            // vbdHex(1, int(top->bcd) & 0XF);
-            //  vbdCycle(i+1);
+            vbdHex(1, int(top->data_out) & 0XF);
+             vbdCycle(i+1);
             //---- end of Vbuddy output section
 
             // change input stimuli
+            top->en = vbdFlag();
             top->rst = false;   
             //(step1) top->vbdVal = vbdValue();
             if ((Verilated::gotFinish()) || (vbdGetkey()=='q')) 
