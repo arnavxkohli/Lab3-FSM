@@ -45,6 +45,10 @@ int main(int argc,char **argv, char **env){
             vbdHex(1, int(top->data_out) & 0XF);
             vbdCycle(i+1);
 
+            vbdBar(top->data_out & 0xFF);
+
+            // having issues with the led display, uncomment the vbdBar line above to check.
+
             //---- end of Vbuddy output section
 
             // change input stimuli
