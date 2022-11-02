@@ -1,4 +1,4 @@
-## Vbuddy functions for Testbech
+## Vbuddy v1.1 functions for Testbech
 
 ```C++
 // ---- Vbuddy user functions
