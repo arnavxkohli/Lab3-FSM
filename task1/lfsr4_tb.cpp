@@ -43,7 +43,8 @@ int main(int argc,char **argv, char **env){
             // vbdHex(3, (int(top->bcd) >> 8) & 0XF);
             // vbdHex(2, (int(top->bcd) >> 4) & 0XF);
             vbdHex(1, int(top->data_out) & 0XF);
-             vbdCycle(i+1);
+            vbdCycle(i+1);
+
             //---- end of Vbuddy output section
 
             // change input stimuli
