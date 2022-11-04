@@ -1,16 +1,16 @@
 // Verilated -*- C++ -*-
 // DESCRIPTION: Verilator output: Symbol table implementation internals
 
-#include "Vclktick__Syms.h"
-#include "Vclktick.h"
-#include "Vclktick___024root.h"
+#include "Vchallenge__Syms.h"
+#include "Vchallenge.h"
+#include "Vchallenge___024root.h"
 
 // FUNCTIONS
-Vclktick__Syms::~Vclktick__Syms()
+Vchallenge__Syms::~Vchallenge__Syms()
 {
 }
 
-Vclktick__Syms::Vclktick__Syms(VerilatedContext* contextp, const char* namep, Vclktick* modelp)
+Vchallenge__Syms::Vchallenge__Syms(VerilatedContext* contextp, const char* namep, Vchallenge* modelp)
     : VerilatedSyms{contextp}
     // Setup internal state of the Syms class
     , __Vm_modelp{modelp}

@@ -5,20 +5,20 @@
 // The class here is then constructed to instantiate the design.
 // See the Verilator manual for examples.
 
-#ifndef VERILATED_VCLKTICK_H_
-#define VERILATED_VCLKTICK_H_  // guard
+#ifndef VERILATED_VCHALLENGE_H_
+#define VERILATED_VCHALLENGE_H_  // guard
 
 #include "verilated.h"
 
-class Vclktick__Syms;
-class Vclktick___024root;
+class Vchallenge__Syms;
+class Vchallenge___024root;
 class VerilatedVcdC;
 
 // This class is the main interface to the Verilated model
-class Vclktick VL_NOT_FINAL : public VerilatedModel {
+class Vchallenge VL_NOT_FINAL : public VerilatedModel {
   private:
     // Symbol table holding complete model state (owned by this class)
-    Vclktick__Syms* const vlSymsp;
+    Vchallenge__Syms* const vlSymsp;
 
   public:
 
@@ -28,7 +28,7 @@ class Vclktick VL_NOT_FINAL : public VerilatedModel {
     VL_IN8(&clk,0,0);
     VL_IN8(&rst,0,0);
     VL_IN8(&en,0,0);
-    VL_OUT8(&tick,0,0);
+    VL_OUT8(&out,7,0);
     VL_IN16(&N,15,0);
 
     // CELLS
@@ -37,19 +37,19 @@ class Vclktick VL_NOT_FINAL : public VerilatedModel {
 
     // Root instance pointer to allow access to model internals,
     // including inlined /* verilator public_flat_* */ items.
-    Vclktick___024root* const rootp;
+    Vchallenge___024root* const rootp;
 
     // CONSTRUCTORS
     /// Construct the model; called by application code
     /// If contextp is null, then the model will use the default global context
     /// If name is "", then makes a wrapper with a
     /// single model invisible with respect to DPI scope names.
-    explicit Vclktick(VerilatedContext* contextp, const char* name = "TOP");
-    explicit Vclktick(const char* name = "TOP");
+    explicit Vchallenge(VerilatedContext* contextp, const char* name = "TOP");
+    explicit Vchallenge(const char* name = "TOP");
     /// Destroy the model; called (often implicitly) by application code
-    virtual ~Vclktick();
+    virtual ~Vchallenge();
   private:
-    VL_UNCOPYABLE(Vclktick);  ///< Copying not allowed
+    VL_UNCOPYABLE(Vchallenge);  ///< Copying not allowed
 
   public:
     // API METHODS
