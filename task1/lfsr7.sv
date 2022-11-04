@@ -1,4 +1,4 @@
-module lfsr4 (
+module lfsr7 (
     input logic clk, // clock
     input logic rst, // reset, always needed for default state
     input logic en,

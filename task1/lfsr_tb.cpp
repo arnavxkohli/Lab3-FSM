@@ -43,9 +43,10 @@ int main(int argc,char **argv, char **env){
             // vbdHex(3, (int(top->bcd) >> 8) & 0XF);
             vbdHex(2, (int(top->data_out) >> 4) & 0XF);
             vbdHex(1, int(top->data_out) & 0XF);
-            vbdCycle(i+1);
 
-            //vbdBar(top->data_out & 0xFF);
+            vbdBar(top->data_out & 0xFF);
+
+            vbdCycle(i+1);
 
             // having issues with the led display, uncomment the vbdBar line above to check.
 

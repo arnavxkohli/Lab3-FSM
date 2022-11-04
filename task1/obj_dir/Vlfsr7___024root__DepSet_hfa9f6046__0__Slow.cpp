@@ -11,7 +11,7 @@ VL_ATTR_COLD void Vlfsr7___024root___settle__TOP__0(Vlfsr7___024root* vlSelf) {
     Vlfsr7__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vlfsr7___024root___settle__TOP__0\n"); );
     // Body
-    vlSelf->data_out = vlSelf->lfsr4__DOT__sreg;
+    vlSelf->data_out = vlSelf->lfsr7__DOT__sreg;
 }
 
 VL_ATTR_COLD void Vlfsr7___024root___eval_initial(Vlfsr7___024root* vlSelf) {
@@ -46,5 +46,5 @@ VL_ATTR_COLD void Vlfsr7___024root___ctor_var_reset(Vlfsr7___024root* vlSelf) {
     vlSelf->rst = VL_RAND_RESET_I(1);
     vlSelf->en = VL_RAND_RESET_I(1);
     vlSelf->data_out = VL_RAND_RESET_I(7);
-    vlSelf->lfsr4__DOT__sreg = VL_RAND_RESET_I(7);
+    vlSelf->lfsr7__DOT__sreg = VL_RAND_RESET_I(7);
 }

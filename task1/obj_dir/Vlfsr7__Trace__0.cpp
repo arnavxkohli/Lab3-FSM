@@ -27,7 +27,7 @@ void Vlfsr7___024root__trace_chg_sub_0(Vlfsr7___024root* vlSelf, VerilatedVcd::B
     bufp->chgBit(oldp+1,(vlSelf->rst));
     bufp->chgBit(oldp+2,(vlSelf->en));
     bufp->chgCData(oldp+3,(vlSelf->data_out),7);
-    bufp->chgCData(oldp+4,(vlSelf->lfsr4__DOT__sreg),7);
+    bufp->chgCData(oldp+4,(vlSelf->lfsr7__DOT__sreg),7);
 }
 
 void Vlfsr7___024root__trace_cleanup(void* voidSelf, VerilatedVcd* /*unused*/) {
